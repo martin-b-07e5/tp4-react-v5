@@ -1,0 +1,23 @@
+/* https://create-react-app.dev/docs/adding-a-css-modules-stylesheet */
+
+.movieCard {
+  list-style: none;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.movieCard:hover {
+  opacity: 0.8;
+}
+
+.movieImage {
+  border-radius: 10px;
+  background-color: azure;
+}
+
+@media (max-width: 560px) {
+  .movieImage {
+    width: 100%;
+    height: auto;
+  }
+}

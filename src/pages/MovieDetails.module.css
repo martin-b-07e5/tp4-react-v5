@@ -1,0 +1,48 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  max-width: 400px;
+  height: auto;
+  height: 80%;
+  margin: 15px;
+}
+
+.movieImage {
+  /* border-radius: 15px; */
+  border-radius: 10px;
+}
+.movieImage:hover {
+  /* opacity: 0.95; */
+  opacity: 0.85;
+}
+
+.movieDetails {
+  font-size: 1.2rem;
+  /* color: antiquewhite; */
+  color: whitesmoke;
+}
+
+.firstItem {
+  margin-top: 0;
+}
+
+/* .title {
+  color: magenta;
+  font-size: 2rem;
+} */
+
+/* 
+.genre {
+  color: lightslategray;
+  padding-left: 20px;
+}
+
+.description {
+  color: lightgray;
+  padding-left: 20px;
+}
+*/
