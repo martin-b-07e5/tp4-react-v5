@@ -36,7 +36,7 @@ export function Search() {
     if (search != null) {
       setSearchText(search || ""); // Al principio el search es null » Sin el OR no funciona.
       if (search.length > 1) {
-        setIsValid(false); // cdo search > x
+        setIsValid(false); // cdo search > x, p/ocultar btn
       }
     }
   }, [search]);
@@ -60,7 +60,7 @@ export function Search() {
         <button
           className={styles.searchButton}
           type="submit"
-          disabled={!isValid} // lo comenté por funcionalidad al probar app
+          disabled={!isValid}
         >
           <FaSearch size={20} />
         </button>

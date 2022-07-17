@@ -6,7 +6,7 @@ import styles from "./App.module.css";
 import { MovieDetails } from "./pages/MovieDetails";
 import { LandingPage } from "./pages/LandingPage"; // before MoviesGrid
 import { MyNavBarComponent } from "./components/MyNavBarComponent";
-import { Error404 } from "./pages/Error404";
+import { ErrorPage } from "./pages/ErrorPage";
 
 export function App() {
   return (
@@ -23,6 +23,7 @@ export function App() {
           <Route path="/" element={<LandingPage />} />
           {/* <Route path="/moviesx" element={<LandingPage />} /> */}
           <Route path="/tp4-react" element={<LandingPage />} />
+          <Route path="/tp4-react-v5" element={<LandingPage />} />
 
           {/* 👇usamos el COMPONENTE (cdo HACEMOS CLICK en una movie)*/}
           {/* al path le pasamos un parametro (:movieId) que es dinámico 
@@ -33,7 +34,7 @@ export function App() {
 
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/contactUs" element={<h4>contactUs</h4>} />
-          <Route path="*" element={<Error404 />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
     </Router>
